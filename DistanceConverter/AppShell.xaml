@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Shell
+    x:Class="DistanceConverter.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views='clr-namespace:DistanceConverter.Views'
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <Tab Title="Distance">
+            <ShellContent ContentTemplate="{DataTemplate views:DistancePage}"/>
+        </Tab>
+        <Tab Title="Weight">
+            <ShellContent ContentTemplate="{DataTemplate views:WeightPage}"/>
+        </Tab>
+    </TabBar>
+    
+</Shell>
